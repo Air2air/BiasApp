@@ -1,0 +1,32 @@
+[
+  {
+    "id": 9853,
+    "key": "New York Times",
+    "value": -5
+  },
+  {
+    "id": 3451,
+    "key": "The Guardian",
+    "value": -4
+  },
+  {
+    "id": 2875,
+    "key": "Los Angeles Times",
+    "value": -1
+  },
+  {
+    "id": 346,
+    "key": "The Washington Post",
+    "value": 1
+  },
+  {
+    "id": 46,
+    "key": "Newsweek",
+    "value": 3
+  },
+  {
+    "id": 967,
+    "key": "Daily Mail",
+    "value": 4
+  }
+]
