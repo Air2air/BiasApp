@@ -1,5 +1,5 @@
 import ReactECharts from "echarts-for-react";
-import { FONT_FAMILY_CONDENSED } from "../../styles/Text";
+
 
 const ChartSummary = ({ data }) => {
   const sortedData = data.sort((a, b) => a.value - b.value);
@@ -17,7 +17,7 @@ const ChartSummary = ({ data }) => {
       show: false,
 
       axisLabel: {
-        fontFamily: FONT_FAMILY_CONDENSED,
+        // fontFamily: FONT_FAMILY_CONDENSED,
         fontSize: 17,
         color: "rgba(0,0,0,1)",
         location: "inside",
@@ -36,7 +36,7 @@ const ChartSummary = ({ data }) => {
       nameLocation: "right",
       name: "",
       axisLabel: {
-        fontFamily: FONT_FAMILY_CONDENSED,
+        // fontFamily: FONT_FAMILY_CONDENSED,
         fontSize: 17,
         color: "rgba(0,0,0,0.8)",
         location: "inside",
@@ -59,7 +59,7 @@ const ChartSummary = ({ data }) => {
         type: "bar",
         data: sortedData.map((item) => item.value),
         label: {
-          fontFamily: FONT_FAMILY_CONDENSED,
+          // fontFamily: FONT_FAMILY_CONDENSED,
           fontSize: 17,
           show: true,
           position: "inside",
