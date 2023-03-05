@@ -1,17 +1,23 @@
 import { useState } from "react";
 import "./styles/App.css";
-import TrendsSummary from "components/Trends/trendsSummary";
 import Footer from "components/Footer/footer";
 import Navbar from "components/Navbar/navbar";
+import Sparkline from "components/Sparkline/sparkline";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const sparklineData = {
+    name: "Page A",
+    range: 100,
+    value: -54,
+  };
 
   return (
     <>
       <Navbar />
       <div className="container mx-auto">
-        <TrendsSummary jsonFile="data/media.json" />
+        <Sparkline data={sparklineData} />
         <input
           type="text"
           placeholder="Type here"
