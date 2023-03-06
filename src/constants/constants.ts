@@ -1,1 +1,1 @@
-export const APP_NAME = 'NoBias.lol';
+export const APP_NAME = "NoBias.lol";

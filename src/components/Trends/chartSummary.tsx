@@ -1,6 +1,5 @@
 import ReactECharts from "echarts-for-react";
 
-
 const ChartSummary = ({ data }) => {
   const sortedData = data.sort((a, b) => a.value - b.value);
 

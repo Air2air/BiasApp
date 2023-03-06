@@ -17,24 +17,22 @@ const Sparkline: React.FC<Props> = ({ data }) => {
 
   return (
     <>
-
-
-    <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center">
         {data.name}
-      {data.value < 0 ? (
-        <progress
-          className="progress progress-error w-12 h-3"
-          value={percentage}
-          max="100"
-        ></progress>
-      ) : (
-        <progress
-          className="progress progress-success w-12 h-3"
-          value={percentage}
-          max="100"
-        ></progress>
-      )}
-      {percentage}
+        {data.value < 0 ? (
+          <progress
+            className="progress progress-error w-12 h-3"
+            value={percentage}
+            max="100"
+          ></progress>
+        ) : (
+          <progress
+            className="progress progress-success w-12 h-3"
+            value={percentage}
+            max="100"
+          ></progress>
+        )}
+        {percentage}
       </div>
     </>
   );

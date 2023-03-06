@@ -17,7 +17,7 @@ export const FetchData = ({ file }) => {
         const response = await fetch(file, { headers });
         const json = await response.json();
         setData(json);
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err);
       } finally {
